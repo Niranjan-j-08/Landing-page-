@@ -182,7 +182,7 @@
       const webhookURL = 'http://localhost:5678/webhook/de92fecf-9930-456e-abda-1ea78eba533a';
 
       form.addEventListener('submit', function(e) {
-        e.preventDefault(); // பக்கம் refresh ஆவதைத் தடுக்கவும்
+        e.preventDefault();
 
      
         const formData = {
@@ -190,7 +190,7 @@
           email: document.getElementById('email').value,
           phone: document.getElementById('phone').value,
           purpose: document.getElementById('purpose').value,
-          brand: document.getElementById('carModel').value, // id 'carModel', ஆனால் டேட்டா 'brand' ஆக அனுப்பப்படுகிறது
+          brand: document.getElementById('carModel').value, 
           message: document.getElementById('message').value
         };
 
@@ -226,4 +226,5 @@
     </script>
 </body>
 </html>
+
 
